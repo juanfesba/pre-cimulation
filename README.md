@@ -1,13 +1,16 @@
 # pre-cimulation
-Here is my happy practice for the real cimulation.
-Let's improve this.
+Create Branch.
+Publish.
 
-Now an actual Power Ranger.
+Make local changes. Me :D!
 
-One... more... time!
+Commit!
+(Sync)
+On Git, Create Pull Request
 
-Pull Request, go!
+More Local changes.
+Commit Amend!
+Sync... Save... Blah blah!
 
-Again again again!
-
-Fix me :3
+Merge and delete branch.
+Don't forget to go to main branch again.
