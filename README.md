@@ -5,3 +5,5 @@ Let's improve this.
 Now an actual Power Ranger.
 
 One... more... time!
+
+Pull Request, go!
