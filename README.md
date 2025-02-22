@@ -14,3 +14,7 @@ Sync... Save... Blah blah!
 
 Merge and delete branch.
 Don't forget to go to main branch again.
+
+# Creating Go Module
+go mod init github.com/juanfesba/pre-cimulation
+run hello_world/main.go
