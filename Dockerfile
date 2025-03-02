@@ -27,7 +27,7 @@ WORKDIR /app
 COPY --from=builder /builder/pre-cimulation /app/pre-cimulation
 
 # Expose the port if your application uses one (e.g., for a web server)
-# EXPOSE 8080
+EXPOSE 8080
 
 # Run the executable
 CMD ["./pre-cimulation"]
