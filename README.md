@@ -43,5 +43,9 @@ docker stop <container_id_or_name>
 
 Installing Go Gin (https://github.com/gin-gonic/gin) (https://medium.com/geekculture/full-stack-application-with-go-gin-react-and-mongodb-37b63ef71133)
 
-docker system prune
+go mod tidy
+
+# docker system prune
+docker build --no-cache -t hello-image .
 docker run -p 8080:8080 -d hello-image
+docker run -it -p 8080:8080 hello-image
