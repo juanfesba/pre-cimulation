@@ -5,9 +5,6 @@ FROM node:latest AS builder
 # All subsequent commands will run from this directory.
 WORKDIR /app
 
-# If you need git for cloning
-RUN apk add --no-cache git
-
 # This copies your package.json and package-lock.json (or yarn.lock) files
 # into the /app directory. Copying these first allows Docker to cache the
 # npm install step if your dependencies haven't changed, speeding up subsequent builds.
@@ -18,9 +15,6 @@ WORKDIR /app/precimulation-fe/frontend
 
 # This command runs npm to install all the project dependencies based on the copied package*.json files.
 RUN npm install
-
-# This copies the rest of your React project files into the /app directory in the container.
-COPY . .
 
 # This executes the build script defined in your package.json (usually react-scripts build or similar).
 # This compiles your React application and outputs the production-ready static files into a build folder
@@ -35,7 +29,7 @@ FROM nginx:alpine
 # This is the key to the multi-stage build. It copies the built static files
 # from the build directory in the builder stage (the first stage) to the
 # default Nginx webroot directory (/usr/share/nginx/html) in the current stage.
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/precimulation-fe/frontend/build /usr/share/nginx/html
 
 # Nginx typically serves web content on this port by default.
 # Curious that vite uses 5173 by default, but Nginx uses 80.
