@@ -9,5 +9,6 @@ npm create vite@latest frontend --template react
   cd frontend
   npm install
   npm run dev
+http://localhost:5173/
 
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
