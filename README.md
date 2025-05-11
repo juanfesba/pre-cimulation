@@ -47,5 +47,9 @@ go mod tidy
 
 # docker system prune
 docker build --no-cache -t hello-image .
+go mod tidy
+
+# docker system prune
+docker build --no-cache -t hello-image .
 docker run -p 8080:8080 -d hello-image
 docker run -it -p 8080:8080 hello-image
