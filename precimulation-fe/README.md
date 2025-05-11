@@ -10,6 +10,7 @@ npm create vite@latest frontend --template react
   npm install
   npm run dev
 http://localhost:5173/
+Create the dockerignore file is IMPORTANT!
 
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
 
