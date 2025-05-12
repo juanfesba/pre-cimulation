@@ -60,8 +60,12 @@ docker rm <container-id>
 
 ====
 
+[optional] docker rmi -f $(docker images -a -q)
+[optional] docker compose build --no-cache
 docker compose up
+  docker compose up --build
 docker compose up -d (detached)
+  docker compose up --build -d (detached)
 docker compose down
 docker compose build
 docker compose logs webapp

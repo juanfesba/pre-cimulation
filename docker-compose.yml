@@ -4,7 +4,7 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - backend # The frontend might depend on the backend
+      - gin-backend # The frontend might depend on the backend
 
   gin-backend:
     build: .   # Build from the Dockerfile in the current directory.
