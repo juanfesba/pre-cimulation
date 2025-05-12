@@ -71,3 +71,8 @@ docker compose up -d (detached)
 docker compose down
 docker compose build
 docker compose logs webapp
+
+====
+
+Use new GitBash terminal (not power shell)
+curl localhost:8080/throw --include --header "Content-Type: application/json" -d @curl_body_test.json  --request "POST"
