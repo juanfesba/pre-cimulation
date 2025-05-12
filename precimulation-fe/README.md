@@ -19,3 +19,11 @@ Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
 # docker build --progress=plain --no-cache -t my-react-frontend .
 docker build -t my-react-frontend .
 docker run -p 80:80 my-react-frontend
+
+=====
+
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+
+npm install axios
+
+Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser

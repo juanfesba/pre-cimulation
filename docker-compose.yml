@@ -1,12 +1,12 @@
 services:
-  frontend:
+  my-react-frontend:
     build: ./precimulation-fe/frontend  # Build from the Dockerfile in the ./frontend directory
     ports:
       - "80:80"
     depends_on:
       - backend # The frontend might depend on the backend
 
-  backend:
+  gin-backend:
     build: .   # Build from the Dockerfile in the current directory.
     ports:
       - "8080:8080"
