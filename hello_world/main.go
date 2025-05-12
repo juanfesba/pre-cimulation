@@ -18,12 +18,12 @@ type Ball struct {
 	Amount int    `json:"amount"`
 }
 
-var balls = []Ball{
+var balls = []*Ball{
 	{Name: "Football", Color: "White", Amount: 3},
 	{Name: "Basket", Color: "Orange", Amount: 7},
 }
 
-func addBall(ball Ball) {
+func addBall(ball *Ball) {
 	for _, eb := range balls {
 		if ball.Name == eb.Name {
 			eb.Amount += ball.Amount
@@ -40,8 +40,8 @@ func postMethod(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	fmt.Printf("Obtained ball: %+v", ball)
-	addBall(ball)
+	fmt.Printf("Obtained ball: %+v\n", ball)
+	addBall(&ball)
 	fmt.Println("Added ball succesfully. About to respond.")
 	c.JSON(http.StatusCreated, ball)
 }
