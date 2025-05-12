@@ -54,6 +54,10 @@ docker build --no-cache -t hello-image .
 docker run -p 8080:8080 -d hello-image
 docker run -it -p 8080:8080 hello-image
 
+docker ps
+docker stop <container-id>
+docker rm <container-id>
+
 ====
 
 docker compose up

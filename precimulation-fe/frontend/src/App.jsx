@@ -13,7 +13,7 @@ function App() {
   const fetchBackendData = async () => {
     try {
       // *** Replace with your actual backend URL and endpoint ***
-      const response = await axios.get('http://localhost:3000/api/data');
+      const response = await axios.get('http://localhost:8080/ping');
       console.log('Data from backend:', response.data);
       setBackendData(response.data); // Update state with fetched data
       setError(null); // Clear any previous errors
