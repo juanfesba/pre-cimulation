@@ -60,6 +60,7 @@ docker rm <container-id>
 
 ====
 
+[optional] docker system prune -a
 [optional] docker rmi -f $(docker images -a -q)
 [optional] docker compose build --no-cache
 docker compose up
