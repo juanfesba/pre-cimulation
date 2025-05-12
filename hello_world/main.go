@@ -16,7 +16,7 @@ func main() {
 	r.Use(cors.Default())
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "pong",
+			"message": "pong v0.0.1",
 		})
 	})
 	err := r.Run(":8080") // listen and serve on 0.0.0.0:8080 (for windows "http://localhost:8080/ping")
