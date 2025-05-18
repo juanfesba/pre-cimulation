@@ -15,6 +15,8 @@ Sync... Save... Blah blah!
 Merge and delete branch.
 Don't forget to go to main branch again.
 
+VS Code Extensions: Docker, Go, Kubernetes, vscode-proto4, YAML, Copilot
+
 ===
 
 Local changes.
